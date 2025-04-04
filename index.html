@@ -6,7 +6,11 @@
     <title>WanderWise - Home</title>
 
     <!-- Favicon -->
-     <link rel="shortcut icon" href="./src/assets/favicon/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
     <!-- Third Party CSS Links -->
     <link
@@ -23,8 +27,101 @@
     <link rel="stylesheet" href="./src/css/responsive.css" />
   </head>
   <body class="font-roboto">
-    <i class="fa-solid fa-house"></i>
-    <h1>Hello World!</h1>
+    <!-- Start Header Section -->
+    <header>
+      <div class="header-container">
+        <div class="header-top">
+          <div class="header-top-content">
+            <div class="row header-title">
+              <h1 class="title">Good Morning!</h1>
+              <p class="sub-title">
+                Explore beautiful places in the world with Wander Wise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-content">
+            <div class="row header-form-container">
+              <div class="fieldset">
+                <form class="search-place-form">
+                  <div class="form-item">
+                    <label for="location" class="input-field">
+                      <p class="field-name">Location</p>
+                      <div class="input-with-icon">
+                        <input
+                          type="text"
+                          name="location"
+                          id="location"
+                          placeholder="Add destination"
+                        />
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-item">
+                    <label for="check-in" class="input-field">
+                      <p class="field-name">Check in</p>
+                      <div class="input-with-icon">
+                        <input
+                          type="text"
+                          name="check-in"
+                          id="check-in"
+                          placeholder="Add dates"
+                        />
+                        <i class="fa-solid fa-calendar-days"></i>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-item">
+                    <label for="check-out" class="input-field">
+                      <p class="field-name">Check out</p>
+                      <div class="input-with-icon">
+                        <input
+                          type="text"
+                          name="check-out"
+                          id="check-out"
+                          placeholder="Add dates"
+                        />
+                        <i class="fa-solid fa-calendar-days"></i>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-item">
+                    <label for="guest" class="input-field">
+                      <p class="field-name">Location</p>
+                      <div class="input-with-icon">
+                        <input
+                          type="text"
+                          name="guest"
+                          id="guest"
+                          placeholder="Add guest"
+                        />
+                        <i class="fa-solid fa-users"></i>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-item">
+                    <div class="search-btn">
+                      <button type="submit">Search</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end Header Section -->
+
+    <!-- Start Main Section -->
+    <main></main>
+    <!-- End Main Section -->
+
+    <!-- Start Footer Section -->
+    <footer></footer>
+    <!-- End Footer Section -->
 
     <!-- Third Party JS Links -->
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
