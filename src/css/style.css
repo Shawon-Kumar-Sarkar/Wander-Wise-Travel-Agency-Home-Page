@@ -17,8 +17,11 @@
   --header-search-btn-padding-x: clamp(6px, calc(0.6vw + 0.3rem), 100px);
   --header-search-btn-padding-y: clamp(6px, calc(0.4vw + 0.3rem), 100px);
   --header-search-btn-border-radius: clamp(5px, calc(0.5vw + 0.3rem), 100px);
-  --form-container-shadow: #008ec41a;
+  --form-container-shadow: #008ec430;
   --header-border-radius: clamp(10px, calc(2vw + 0.5rem), 1000px);
+  --primary-h2-font-size: clamp(24px, calc(1.7vw + 1rem), 1000px);
+  --primary-h3-font-size: clamp(18px, calc(0.9vw + 0.7rem), 1000px);
+  --primary-p-font-size: clamp(16px, calc(0.7vw + 0.7rem), 1000px);
 }
 
 * {
@@ -41,6 +44,19 @@ html {
 .row {
   width: 80%;
   margin: 0 auto;
+}
+
+section > div {
+  padding-top: clamp(50px, calc(7vw + 1rem), 1000px);
+}
+
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: var(--primary-h2-font-size);
+  font-weight: 800;
 }
 /* ==============================> Start Header Section <============================== */
 .header-container {
@@ -86,7 +102,7 @@ html {
   font-size: var(--header-sub-title-font-size);
   font-weight: 500;
   line-height: 1;
-  padding-top: clamp(5px, calc(.4vw + .2rem), 100px);
+  padding-top: clamp(5px, calc(0.4vw + 0.2rem), 100px);
 }
 
 .header-bottom {
@@ -187,3 +203,61 @@ html {
   cursor: pointer;
 }
 /* ==============================> end Header Section <============================== */
+
+/* ==============================> Start Choose Us Section <============================== */
+.choose-us-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(20px, calc(1vw + 1rem), 100px);
+  padding-top: clamp(28px, calc(2.5vw + 1rem), 1000px);
+}
+
+.choose-us-card:nth-child(1) {
+  grid-column: 1 / span 4;
+}
+
+.choose-us-card:nth-child(2) {
+  grid-column: 5 / span 4;
+}
+
+.choose-us-card:nth-child(3) {
+  grid-column: 9 / span 4;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: clamp(14px, calc(1vw + 1rem), 100px);
+}
+
+.icon-container .icon {
+  width: clamp(45px, calc(3.5vw + 1rem), 1000px);
+  height: clamp(45px, calc(3.5vw + 1rem), 1000px);
+  background-color: var(--form-container-shadow);
+  color: var(--web-primary-color);
+  border-radius: clamp(5px, calc(.3vw + .2rem), 1000px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container .icon i {
+  font-size: clamp(22px, calc(1.5vw + 0.5rem), 1000px);
+}
+
+.card-info {
+  text-align: center;
+}
+
+.card-info .title {
+  font-size: var(--primary-h3-font-size);
+  font-weight: 700;
+  padding-bottom: clamp(7px, calc(0.3vw + 0.5rem), 100px);
+  line-height: 1;
+}
+
+.card-info .description {
+  font-size: var(--primary-p-font-size);
+  line-height: clamp(20px, calc(1vw + .9rem), 1000px);
+}
+/* ==============================> end Choose Us Section <============================== */
